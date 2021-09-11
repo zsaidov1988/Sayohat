@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sayohat agentligi</title>
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1 class="heading">Sayohat agentligi</h1>
+    </div>
+  </header>
+  <main>
+    <section class="form-section">
+      <div class="container">
+
+        <h2>Quyidagi so`rovnomani to`ldiring</h2>
+
+        <form class="form-js" method="POST">
+
+          <hr>
+          <h3>Shaxsiy ma'lumotlar</h3>
+
+          <div class="row">
+            <div class="mb-3 col-12 col-md-4">
+              <label for="name-id" class="form-label">Ismingizni kiriting</label>
+              <input type="text" class="form-control input-name-js" name="First-name" id="name-id"
+                aria-describedby="emailHelp" placeholder="Zafar">
+              <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+            </div>
+
+            <div class="mb-3 col-12 col-md-4">
+              <label for="surname-id" class="form-label">Familiyangizni kiriting</label>
+              <input type="text" class="form-control input-lname-js" name="Last-name" id="surname-id"
+                placeholder="Saidov">
+            </div>
+
+            <div class="mb-3 col-12 col-md-4">
+              <label for="born-date-id" class="form-label">Tug`ilgan vaqtingizni kiriting</label>
+              <input type="date" class="form-control input-date-js" name="Born-date" id="born-date"
+                placeholder="26.12.1988">
+            </div>
+          </div>
+
+          <hr>
+          <h3>Sayohat haqida ma'lumotlar</h3>
+          <div class="row">
+            <div class="mb-3 col-12 col-md-4">
+              <label for="country-id" class="form-label">Qayerda dam olmoqchisiz</label>
+              <select class="form-select country-select-js" id="country-id" name="Country">
+                <option selected disabled>Davlatlardan birini tanlang</option>
+                <option value="db">Dubay</option>
+                <option value="ml">Malayziya</option>
+                <option value="cl">Kaliforniya</option>
+              </select>
+            </div>
+            <div class="mb-3 col-12 col-md-4">
+              <label for="days-id" class="form-label">Nechchi kun dam olmoqchisiz</label>
+              <select class="form-select days-select-js" id="days-id" name="Days">
+                <option selected disabled>Kunlar sonini tanlang</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+            <div class="mb-3 col-12 col-md-4">
+              <label for="hotel-id" class="form-label">Mehmonxonani tanlang</label>
+              <select class="form-select hotel-star-select-js" id="hotel-id" name="hotel">
+                <option value="3">3 yulduzli</option>
+                <option value="4">4 yulduzli</option>
+                <option value="5">5 yulduzli</option>
+              </select>
+            </div>
+          </div>
+
+          <hr>
+          <button type="submit" class="btn btn-primary">Hisoblash</button>
+
+        </form>
+      </div>
+
+    </section><!-- form-section -->
+
+    <section class="info">
+      <div class="container">
+        <h2 class="info__heading"></h2>
+
+        <p class="info__message"></p>
+
+        <table class="table table-js">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Harajat nomi</th>
+              <th scope="col">Narxi</th>
+            </tr>
+          </thead>
+          <tbody class="tbody-js">
+
+          </tbody>
+        </table>
+      </div>
+
+
+    </section>
+  </main>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
