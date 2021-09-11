@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <div class="container">
       <h1 class="heading">Sayohat agentligi</h1>
     </div>
@@ -87,6 +87,17 @@
           </div>
 
           <hr>
+
+          <h2>Valyutani tanlang</h2>
+
+          <input type="radio" class="btn-check radio-uzs-js" name="options-outlined" id="uzs" autocomplete="off"
+            value="uzs">
+          <label class="btn btn-outline-success" for="uzs">So`m</label>
+          <input type="radio" class="btn-check radio-usd-js" name="options-outlined" id="usd" autocomplete="off"
+            value="usd" checked>
+          <label class="btn btn-outline-success" for="usd">AQSh dollari</label>
+
+          <hr>
           <button type="submit" class="btn btn-primary">Hisoblash</button>
 
         </form>
@@ -94,18 +105,18 @@
 
     </section><!-- form-section -->
 
-    <section class="info">
+    <section class="d-none info">
       <div class="container">
         <h2 class="info__heading"></h2>
 
         <p class="info__message"></p>
 
-        <table class="table table-js">
+        <table class="table d-none table-js">
           <thead>
             <tr>
               <th scope="col">#</th>
               <th scope="col">Harajat nomi</th>
-              <th scope="col">Narxi</th>
+              <th scope="col" class="price-sell-js">Narxi, USD</th>
             </tr>
           </thead>
           <tbody class="tbody-js">
@@ -117,6 +128,9 @@
 
     </section>
   </main>
+  <footer class="footer">
+    BU YERDA FOOTER BO`LADI
+  </footer>
   <script src="./js/main.js"></script>
 </body>
 

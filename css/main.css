@@ -1,5 +1,18 @@
 
+.header {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 
 .info {
   margin-top: 70px;
+}
+
+.footer {
+  background-color: rgb(226, 255, 251);
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
 }
